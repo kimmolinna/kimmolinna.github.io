@@ -1,1 +1,1 @@
-source: electicity is table('duckdb:electricity.parquet')
+source: electricity is table('duckdb:electricity.parquet')
