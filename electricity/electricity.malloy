@@ -1,3 +1,4 @@
 source: electricity is table('duckdb:electricity.parquet'){
     dimension: time_year is time.year
+    measure: sum_consumption is sum(consumption)
 }

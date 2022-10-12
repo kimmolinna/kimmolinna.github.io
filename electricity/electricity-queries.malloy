@@ -3,5 +3,6 @@ import "electricity.malloy"
 // --
 // Name: count consumption
 Query: electricity -> {  
-    aggregate: consumption
+    group_by: time_year
+    aggregate: sum_consumption
                  }
