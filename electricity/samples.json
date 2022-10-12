@@ -1,0 +1,8 @@
+[
+  {
+    "name": "electricity",
+    "dataTables": ["electricity.parquet"],
+    "modelPath": "./electricity.malloy",
+    "queryPath": "./electricity-queries.malloy"
+  }
+]

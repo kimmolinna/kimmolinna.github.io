@@ -1,0 +1,7 @@
+import "electricity.malloy"
+
+// --
+// Name: count consumption
+Query: electricity -> {  
+    aggregate: consumption
+                 }
