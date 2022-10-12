@@ -1,0 +1,1 @@
+source: electicity is table('duckdb:electricity.parquet')
