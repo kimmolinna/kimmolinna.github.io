@@ -1,1 +1,3 @@
-source: electricity is table('duckdb:electricity.parquet')
+source: electricity is table('duckdb:electricity.parquet'){
+    dimension: ts is time::timestamp
+}
