@@ -1,5 +1,5 @@
 {
-  "by_month_simple_bar": {
+  "by_time_simple_bar": {
     "renderer": "vega",
     "spec_name": "bar_TM"
   },
@@ -24,7 +24,7 @@
           "field": "#{2}",
           "type": "quantitative",
           "axis": {
-            "grid": false
+            "grid": true
           },
           "title": null
         }

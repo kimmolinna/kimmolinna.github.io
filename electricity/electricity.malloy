@@ -1,7 +1,14 @@
+--! styles electricity_styles.json
 source: electricity is table('duckdb:electricity.parquet'){
     where: time.year > @2021
     dimension: time_year is time.year
                time_month is time.month
                time_day is time.day
     measure: sum_consumption is sum(consumption)
+// Name: area chart of day consumption
+    query: by_day is {
+    group_by: time_day            // time
+    aggregate: sum_consumption    // measure
+    }
+
 }
