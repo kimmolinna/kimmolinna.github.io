@@ -3,21 +3,26 @@
 import "electricity.malloy"
 
 // --
-// Name: sum consumption
+// Name: sum consumption by month
 query: electricity -> {  
     where: time.year > @2021
     group_by: _Month is time.month
     aggregate: _Sum is sum(consumption)
 }
+
 // --
-// Name: count consumption
+// Name: sum consumption by day
+
+query: electricity -> {
+    where: time.year > @2021
+    group_by: time_day            // time
+    aggregate: sum_consumption
+}
+
+// --
+// Name: area chart consumption
 query: by_month_simple_bar is electricity -> {
     where: time.year > @2021
     group_by: time_day            // time
-    aggregate: sum_consumption      // measure
-}
-
-query: electricity -> {
-    group_by: time_day            // time
-    aggregate: sum_consumption
+    aggregate: sum_consumption    // measure
 }
