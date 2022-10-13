@@ -18,7 +18,6 @@ query: electricity -> {
 
 // --
 // Name: total consumption by day
-
 query: electricity -> {
     group_by: time_day            // time
     aggregate: sum_consumption
@@ -27,5 +26,5 @@ query: electricity -> {
 // --
 // Name: area chart of day consumption
 query: electricity -> {
-    nest: by_time_simple_bar is by_day   
+    nest: by_time_simple_area is by_day   
 }

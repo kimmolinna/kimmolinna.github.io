@@ -1,9 +1,9 @@
 {
-  "by_time_simple_bar": {
+  "by_time_simple_area": {
     "renderer": "vega",
-    "spec_name": "bar_TM"
+    "spec_name": "area_TM"
   },
-  "bar_TM": {
+  "area_TM": {
     "renderer": "vega",
     "spec": {
       "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
