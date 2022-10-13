@@ -3,4 +3,5 @@ source: electricity is table('duckdb:electricity.parquet'){
                time_month is time.month
                time_day is time.day
     measure: sum_consumption is sum(consumption)
+
 }
