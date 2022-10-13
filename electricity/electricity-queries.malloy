@@ -2,7 +2,8 @@ import "electricity.malloy"
 
 // --
 // Name: count consumption
-Query: electricity -> {  
-    group_by: time_year
-    aggregate: sum_consumption
-                 }
+query: electricity -> {  
+    where: time.year > @2021
+    group_by: time_year,_Month is time.month
+    aggregate: _Sum is sum(consumption),sum_consumption
+}

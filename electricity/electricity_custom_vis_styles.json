@@ -1,0 +1,29 @@
+{
+"by_month_simple_bar": {
+    "renderer": "vega",
+    "spec_name": "bar_TM"
+  },
+"bar_TM":{
+  "renderer":"vega",
+  "spec": {
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "height": 50,
+      "data": [],
+      "mark": "bar",
+      "encoding": {
+      "x": {
+        "field": "#{1}",
+        "type": "temporal",
+        "axis": { "grid": false },
+        "title": null
+      },
+      "y": {
+        "field": "#{2}",
+        "type": "quantitative",
+        "axis": { "grid": false },
+        "title": null
+      }
+    }
+  } 
+}
+}

@@ -1,0 +1,26 @@
+--! styles electricity_custom_vis.styles.json
+
+import "electricity.malloy"
+
+// Uses Vega lite visualization definitions
+//
+// Each visualization takes a sub-table as input
+//
+// Visualizations are named with wth parameters they expect
+//  at the end.  For example `bar_SM` expected a string and a
+//  measure.
+//
+// S: dimensional string
+// T: dimensional time based field (date, week, month etc)
+// N: dimensional number
+// M: numeric measure
+source: vis_electricity is electricity{
+
+      // bar_TM: simple bar chart (as opposed to column) with
+  //  labels inside the bar.
+  //  uses 'bar_TM' (bar chart Time and Measure)
+  query: by_month_simple_bar is {
+    group_by: time_month            // time
+    aggregate: sum_consumption      // measure
+  }
+}
