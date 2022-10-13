@@ -3,6 +3,12 @@
 import "electricity.malloy"
 
 // --
+// Name: area chart of day consumption
+query: electricity -> {
+    nest: by_time_vega_area is by_day   
+}
+
+// --
 // Name: total consumption by year
 query: electricity -> {  
     group_by: time_year
@@ -21,10 +27,4 @@ query: electricity -> {
 query: electricity -> {
     group_by: time_day            // time
     aggregate: sum_consumption
-}
-
-// --
-// Name: area chart of day consumption
-query: electricity -> {
-    nest: by_time_vega_area is by_day   
 }
