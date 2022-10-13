@@ -26,5 +26,5 @@ query: electricity -> {
 // --
 // Name: area chart of day consumption
 query: electricity -> {
-    nest: by_time_simple_area is by_day   
+    nest: by_time_vega_area is by_day   
 }

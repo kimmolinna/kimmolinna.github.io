@@ -1,5 +1,5 @@
 {
-  "by_time_simple_area": {
+  "by_time_vega_area": {
     "renderer": "vega",
     "spec_name": "area_TM"
   },
