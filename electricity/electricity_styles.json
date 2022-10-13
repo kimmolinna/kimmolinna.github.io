@@ -7,8 +7,8 @@
     "renderer": "vega",
     "spec": {
       "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-      "height": 400,
-      "width": 800,
+      "height": 300,
+      "width": 600,
       "data": [],
       "mark": "area",
       "encoding": {
